@@ -1,0 +1,21 @@
+
+
+ mCurrentFocus=Window{ef69335 u0 com.android.calculator2/com.android.calculator2.Calculator}
+
+{
+  "deviceName": "Nombre del dispositivo",
+  "platformVersion": "Android Version",
+  "appPackage": "Package",
+  "appActivity": "Activity",
+  "platformName": "Android"
+   }
+
+
+mCurrentFocus=Window{8570340 u0 com.android.calculator2/com.android.calculator2.Calculator}
+
+com.android.calculator2  ----------------> Package
+com.android.calculator2.Calculator --------> Activity
+se puede borrar la parte inicial porque se repite
+
+com.android.calculator2  ----------------> Package
+.Calculator --------> Activity

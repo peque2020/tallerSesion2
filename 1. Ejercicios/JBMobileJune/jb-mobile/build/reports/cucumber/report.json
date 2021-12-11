@@ -1,0 +1,201 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-18T00:01:05.424Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.Runner.hookBeforeScenario2()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "As user, i want create contact so that save in the sim",
+        "description": "",
+        "id": "createcontact;as-user--i-want-create-contact-so-that-save-in-the-sim",
+        "after": [
+          {
+            "result": {
+              "duration": 1749000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "runner.Runner.hookAfterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "have the contact manager app",
+            "match": {
+              "location": "runner.MyStepClean2.haveTheContactManagerApp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27651000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on \"ok\" button in update dialog if exist",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ok\"",
+                  "offset": 9
+                }
+              ],
+              "location": "runner.MyStepClean2.clickOnButtonInUpdateDialogIfExist(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 825000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on \"addContact\" button list contact",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addContact\"",
+                  "offset": 9
+                }
+              ],
+              "location": "runner.MyStepClean2.clickOnButtonListContact(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2101000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "set \"AAARemove\" in \"nameContact\" textbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AAARemove\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"nameContact\"",
+                  "offset": 19
+                }
+              ],
+              "location": "runner.MyStepClean2.setInTextbox(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 822000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "set \"jb@jb.com\" in \"emailContact\" textbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jb@jb.com\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"emailContact\"",
+                  "offset": 19
+                }
+              ],
+              "location": "runner.MyStepClean2.setInTextbox(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 701000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "set \"44444444\" in \"phoneContact\" textbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"44444444\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"phoneContact\"",
+                  "offset": 18
+                }
+              ],
+              "location": "runner.MyStepClean2.setInTextbox(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 666000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click on \"save\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"save\"",
+                  "offset": 9
+                }
+              ],
+              "location": "runner.MyStepClean2.clickOnButton(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1542000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "contact \"AAARemove\" should be created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AAARemove\"",
+                  "offset": 8
+                }
+              ],
+              "location": "runner.MyStepClean2.theContactShouldBeCreated(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@JBGROUP"
+          }
+        ]
+      }
+    ],
+    "name": "CreateContact",
+    "description": "",
+    "id": "createcontact",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/cleanTest/contactManager2.feature",
+    "tags": []
+  }
+]

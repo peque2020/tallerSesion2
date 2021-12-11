@@ -1,0 +1,61 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    implementation group: 'io.appium', name: 'java-client', version: '7.5.1'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+
+    // se agrega dependencias de appium, selenium
+
+    //cucumber
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '6.10.4'
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '6.10.4'
+
+    //report
+    implementation group: 'net.masterthought', name: 'cucumber-reporting', version: '5.5.4'
+
+
+    configurations {
+        cucumberRuntime {
+            extendsFrom testImplementation
+        }
+    }
+
+    //gradle cucumber -Psuite=@NAME
+    task cucumber() {
+        dependsOn assemble, testClasses
+        doLast {
+            javaexec {
+                main = "io.cucumber.core.cli.Main"
+                classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+                //                   REPORT            STEP DEFINITION/HOOKS     ARCHIVOS FEATURE
+
+
+                // reporte por defecto HTML
+                //  args = ['--plugin', 'html:build/reports/cucumber/report.html', '--glue', 'runner', 'src/test/resources', '--tags']+[suite]
+
+                args = ['--plugin', 'json:build/reports/cucumber/report.json', '--glue', 'runner', 'src/test/resources', '--tags'] + [suite]
+            }
+        }
+    }
+}
+
+task generateReport(){
+    sleep 25
+    doLast {
+        javaexec {
+            main = "localReport.Report"
+            classpath = sourceSets.test.runtimeClasspath
+            println 'reporte generado...............'
+        }
+    }
+}

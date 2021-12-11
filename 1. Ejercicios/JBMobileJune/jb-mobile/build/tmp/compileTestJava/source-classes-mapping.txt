@@ -1,0 +1,70 @@
+controlAppium/ControlAppium.java
+ controlAppium.ControlAppium
+activities/contactManagerClean/CreateContactScreen.java
+ activities.contactManagerClean.CreateContactScreen
+sesion/Session.java
+ sesion.Session
+basicAppium/AppiumTarea.java
+ basicAppium.AppiumTarea
+activities/calculadora/MainScreen.java
+ activities.calculadora.MainScreen
+devices/IDevice.java
+ devices.IDevice
+basicAppium/AppiumBasic.java
+ basicAppium.AppiumBasic
+activities/contactManagerClean/ContactListScreen.java
+ activities.contactManagerClean.ContactListScreen
+runner/Contact.java
+ runner.Contact
+devices/AndroidCloud.java
+ devices.AndroidCloud
+localReport/Report.java
+ localReport.Report
+controlAppium/Label.java
+ controlAppium.Label
+controlAppium/Button.java
+ controlAppium.Button
+runner/MyStepContact.java
+ runner.MyStepContact
+basicAppium/JunitBasic.java
+ basicAppium.JunitBasic
+basicAppium/ContactManager.java
+ basicAppium.ContactManager
+basicAppium/AppiumBasicXpath.java
+ basicAppium.AppiumBasicXpath
+activities/contactManager/ContactListScreen.java
+ activities.contactManager.ContactListScreen
+runner/Campos.java
+ runner.Campos
+devices/IOS.java
+ devices.IOS
+testClean/CalculadoraTest.java
+ testClean.CalculadoraTest
+devices/Android.java
+ devices.Android
+activities/contactManagerClean/UpdateDialog.java
+ activities.contactManagerClean.UpdateDialog
+testClean/ContactManagerTest.java
+ testClean.ContactManagerTest
+activities/contactManager/UpdateDialog.java
+ activities.contactManager.UpdateDialog
+devices/WindowsPhone.java
+ devices.WindowsPhone
+devices/FactoryDevices.java
+ devices.FactoryDevices
+ devices.FactoryDevices$1
+ devices.FactoryDevices$DevicesType
+runner/MyStepdefs.java
+ runner.MyStepdefs
+runner/Runner.java
+ runner.Runner
+runner/MyStepClean2.java
+ runner.MyStepClean2
+activities/contactManager/CreateContactScreen.java
+ activities.contactManager.CreateContactScreen
+runner/MyStepCalc.java
+ runner.MyStepCalc
+runner/MyStepCleanCM.java
+ runner.MyStepCleanCM
+controlAppium/TextBox.java
+ controlAppium.TextBox
